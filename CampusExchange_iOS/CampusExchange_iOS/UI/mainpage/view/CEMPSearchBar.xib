@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CEMPSearchBar" customModule="CampusExchange_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="OgG-x1-kri" id="RFa-qh-lsN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchbar_text_border" translatesAutoresizingMaskIntoConstraints="NO" id="nNN-qE-bEv">
+                    <rect key="frame" x="8" y="5" width="312" height="40"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBq-I1-CuB">
+                    <rect key="frame" x="284" y="13" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PBq-I1-CuB" secondAttribute="height" multiplier="1:1" id="ldv-lI-pCL"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="searchbar_clear_icon"/>
+                    <connections>
+                        <action selector="clearAction:" destination="-1" eventType="touchUpInside" id="RqL-5h-NFS"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What are you looking for?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OgG-x1-kri">
+                    <rect key="frame" x="25" y="0.0" width="251" height="50"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjf-q0-Zuw">
+                    <rect key="frame" x="328" y="9" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wjf-q0-Zuw" secondAttribute="height" multiplier="1:1" id="fB4-v9-RTR"/>
+                    </constraints>
+                    <state key="normal" image="searchbar_go_icon"/>
+                    <connections>
+                        <action selector="goAction:" destination="-1" eventType="touchUpInside" id="DqR-Mb-Ptf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wjf-q0-Zuw" secondAttribute="trailing" constant="15" id="0vx-Zd-NwO"/>
+                <constraint firstAttribute="bottom" secondItem="nNN-qE-bEv" secondAttribute="bottom" constant="5" id="1OD-3i-s3e"/>
+                <constraint firstItem="OgG-x1-kri" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="B7W-Gi-UbB"/>
+                <constraint firstItem="PBq-I1-CuB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="F8e-w9-PDZ"/>
+                <constraint firstItem="OgG-x1-kri" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KhU-Qa-icG"/>
+                <constraint firstItem="wjf-q0-Zuw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="N2O-XD-DsI"/>
+                <constraint firstAttribute="bottom" secondItem="PBq-I1-CuB" secondAttribute="bottom" constant="13" id="Ras-zC-J2g"/>
+                <constraint firstAttribute="bottom" secondItem="OgG-x1-kri" secondAttribute="bottom" id="Tr5-4Q-UmA"/>
+                <constraint firstAttribute="bottom" secondItem="wjf-q0-Zuw" secondAttribute="bottom" constant="9" id="Uzh-ez-SPq"/>
+                <constraint firstItem="wjf-q0-Zuw" firstAttribute="leading" secondItem="nNN-qE-bEv" secondAttribute="trailing" constant="8" id="VNe-Ib-COo"/>
+                <constraint firstItem="nNN-qE-bEv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Xfg-Et-tKy"/>
+                <constraint firstItem="nNN-qE-bEv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="joF-yT-sLb"/>
+                <constraint firstItem="wjf-q0-Zuw" firstAttribute="leading" secondItem="PBq-I1-CuB" secondAttribute="trailing" constant="20" id="kPa-Sz-dGa"/>
+                <constraint firstItem="PBq-I1-CuB" firstAttribute="leading" secondItem="OgG-x1-kri" secondAttribute="trailing" constant="8" id="sz2-dK-EbF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-67" y="-234"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="searchbar_clear_icon" width="24" height="24"/>
+        <image name="searchbar_go_icon" width="32" height="32"/>
+        <image name="searchbar_text_border" width="312" height="40"/>
+    </resources>
+</document>

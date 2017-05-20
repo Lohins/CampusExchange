@@ -1,0 +1,6 @@
+framework module Pods_CampusExchange_iOS {
+  umbrella header "Pods-CampusExchange_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

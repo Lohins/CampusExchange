@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIText-Regular.ttf">
+            <string>SFUIText-Regular</string>
+        </array>
+        <array key="SFUIText-Semibold.ttf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CEIDHeaderView" customModule="CampusExchange_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="A0R-3f-2Zo" id="c5G-xd-KZd"/>
+                <outlet property="conditionLabel" destination="hh6-t6-qot" id="PgC-k0-jDA"/>
+                <outlet property="nickNameLabel" destination="zvn-x5-bHr" id="QHy-Sa-T3F"/>
+                <outlet property="postInfoLabel" destination="GHr-Fm-5pg" id="YvG-b4-bks"/>
+                <outlet property="priceInfoLabel" destination="Mbb-br-XOL" id="AW6-IJ-wrG"/>
+                <outlet property="priceLabel" destination="uvA-Te-2eP" id="MbZ-zt-9ac"/>
+                <outlet property="productNameLabel" destination="hTW-SF-SKd" id="nLQ-nN-aMO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainpage_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="A0R-3f-2Zo">
+                    <rect key="frame" x="8" y="8" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="XkH-bA-qpu"/>
+                        <constraint firstAttribute="height" constant="32" id="wua-2V-v3q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Justine Bibber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvn-x5-bHr" userLabel="User name">
+                    <rect key="frame" x="43" y="16" width="200" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="4pU-HV-fxP"/>
+                        <constraint firstAttribute="width" constant="200" id="ePW-pU-Zfe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yamaha Guitar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTW-SF-SKd" userLabel="Item name">
+                    <rect key="frame" x="43" y="33" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ezV-J8-9ut"/>
+                        <constraint firstAttribute="width" constant="200" id="m1d-7y-ubZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition: Used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh6-t6-qot">
+                    <rect key="frame" x="43" y="55" width="200" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="SR0-q6-13Q"/>
+                        <constraint firstAttribute="width" constant="200" id="dTH-EZ-BLx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvA-Te-2eP">
+                    <rect key="frame" x="269" y="18" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="I5j-yt-Jax"/>
+                        <constraint firstAttribute="height" constant="21" id="fOO-JD-j4W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Negotiate" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbb-br-XOL">
+                    <rect key="frame" x="269" y="39" width="100" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="6zX-5Q-bww"/>
+                        <constraint firstAttribute="height" constant="14" id="VOh-4v-8m4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted: 5 hrs ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHr-Fm-5pg">
+                    <rect key="frame" x="169" y="55" width="200" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="byi-Xg-4r3"/>
+                        <constraint firstAttribute="width" constant="200" id="g9C-Ja-awl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zvn-x5-bHr" firstAttribute="leading" secondItem="A0R-3f-2Zo" secondAttribute="trailing" constant="3" id="0II-Q8-Hy6"/>
+                <constraint firstAttribute="trailing" secondItem="GHr-Fm-5pg" secondAttribute="trailing" constant="6" id="A0H-gq-HIg"/>
+                <constraint firstItem="hTW-SF-SKd" firstAttribute="leading" secondItem="A0R-3f-2Zo" secondAttribute="trailing" constant="3" id="FRr-CO-RnQ"/>
+                <constraint firstItem="uvA-Te-2eP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="HA3-w7-Qq3"/>
+                <constraint firstItem="hh6-t6-qot" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="43" id="Jh9-Ph-WgU"/>
+                <constraint firstItem="GHr-Fm-5pg" firstAttribute="top" secondItem="hTW-SF-SKd" secondAttribute="bottom" constant="1" id="Pv1-h7-qXW"/>
+                <constraint firstItem="hTW-SF-SKd" firstAttribute="top" secondItem="zvn-x5-bHr" secondAttribute="bottom" constant="3" id="Qvo-hi-3v7"/>
+                <constraint firstAttribute="trailing" secondItem="uvA-Te-2eP" secondAttribute="trailing" constant="6" id="SXF-yn-Cqx"/>
+                <constraint firstItem="Mbb-br-XOL" firstAttribute="top" secondItem="uvA-Te-2eP" secondAttribute="bottom" id="Uhq-Xd-GC4"/>
+                <constraint firstItem="A0R-3f-2Zo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="dE9-Ps-d5h"/>
+                <constraint firstItem="A0R-3f-2Zo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="kEI-HZ-shA"/>
+                <constraint firstAttribute="trailing" secondItem="Mbb-br-XOL" secondAttribute="trailing" constant="6" id="oZ4-w4-lMw"/>
+                <constraint firstItem="hh6-t6-qot" firstAttribute="top" secondItem="hTW-SF-SKd" secondAttribute="bottom" constant="1" id="sVp-Wj-cHG"/>
+                <constraint firstItem="zvn-x5-bHr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="yYc-3G-sLj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="841" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainpage_avatar" width="960" height="540"/>
+    </resources>
+</document>

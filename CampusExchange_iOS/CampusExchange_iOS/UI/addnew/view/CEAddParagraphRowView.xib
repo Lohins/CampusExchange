@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CEAddParagraphRowView" customModule="CampusExchange_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="jV8-IN-wxT" id="jKb-GA-gHb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paragraph_border_red" translatesAutoresizingMaskIntoConstraints="NO" id="dmh-4S-jDc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jV8-IN-wxT">
+                    <rect key="frame" x="23" y="20" width="329" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jV8-IN-wxT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="23" id="Ry5-wL-dmS"/>
+                <constraint firstAttribute="bottom" secondItem="jV8-IN-wxT" secondAttribute="bottom" constant="20" id="UH8-Wd-avK"/>
+                <constraint firstItem="jV8-IN-wxT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="gAH-25-6Ia"/>
+                <constraint firstAttribute="trailing" secondItem="dmh-4S-jDc" secondAttribute="trailing" id="khw-Qf-4BW"/>
+                <constraint firstItem="dmh-4S-jDc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rYi-jJ-Lxl"/>
+                <constraint firstItem="dmh-4S-jDc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sfp-bC-LQu"/>
+                <constraint firstAttribute="bottom" secondItem="dmh-4S-jDc" secondAttribute="bottom" id="u84-rb-J7j"/>
+                <constraint firstAttribute="trailing" secondItem="jV8-IN-wxT" secondAttribute="trailing" constant="23" id="yo2-zD-Zkg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-32" y="37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="paragraph_border_red" width="360" height="168"/>
+    </resources>
+</document>
